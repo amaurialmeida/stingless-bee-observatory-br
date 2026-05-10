@@ -1,0 +1,15 @@
+[theme]
+primaryColor = "#2d5016"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f0f8e8"
+textColor = "#262730"
+font = "sans serif"
+
+[client]
+showErrorDetails = true
+
+[logger]
+level = "error"
+
+[browser]
+gatherUsageStats = false
