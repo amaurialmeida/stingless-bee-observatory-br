@@ -1,8 +1,13 @@
 streamlit
 pandas
 numpy
-folium
 plotly
+folium
+streamlit-folium
 matplotlib
 seaborn
 requests
+shapely
+pyproj
+geopandas
+pip
