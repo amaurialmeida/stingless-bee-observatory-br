@@ -266,19 +266,3 @@ with st.expander("📖 Sobre os dados e o Atlas da Meliponicultura"):
     - Visualizar distribuição geográfica por diferentes fontes (ICMBio ou Catálogo Moure)
     - Acessar o infoA.B.E.L.H.A. (sistema CRIA) para detalhes científicos
     """)
-
-## Rodapé
-st.markdown("---")
-st.markdown("""
-**Créditos:** Dados: ICMBio (Portaria 665/2021) e [A.B.E.L.H.A.](https://abelha.org.br) | Visualização: 🐝 Observatório de Abelhas sem Ferrão | Metodologia: Atlas da Meliponicultura no Brasil
-""") Rodapé com referências
-st.markdown("---")
-st.markdown("""
-**Fontes e créditos:**
-- 🌐 Dados de ocorrência: [GBIF](https://www.gbif.org) (API) e [iNaturalist](https://www.inaturalist.org) (API)
-- 📖 Referência de espécies: [A.B.E.L.H.A.](https://abelha.org.br) / [Atlas da Meliponicultura no Brasil](https://abelha.org.br/atlas-da-meliponicultura-no-brasil/) (ICMBio - Catálogo Nacional de ANSF)
-- 🗺️ Municípios: IBGE (via dados abertos)
-- 💾 Cache: Dados atualizados a cada 24h
-
-"Pesquisa e investigação feito por Amauri Almeida para a comunidade de meliponicultores e pesquisadores."
-""")
