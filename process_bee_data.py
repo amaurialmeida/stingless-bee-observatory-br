@@ -1,52 +1,74 @@
 import pandas as pd
+import json
 
-def process_data():
-    df = pd.read_csv('/home/ubuntu/meliponini_br_occurrences.csv')
-    
-    # Mapeamento de nomes científicos para nomes populares e raios de forrageamento
-    bee_info = {
-        'Tetragonisca angustula': {'popular': 'Jataí', 'radius': 600, 'color': 'yellow'},
-        'Melipona quadrifasciata': {'popular': 'Mandaçaia', 'radius': 2000, 'color': 'blue'},
-        'Melipona scutellaris': {'popular': 'Uruçu Nordestina', 'radius': 2000, 'color': 'orange'},
-        'Melipona bicolor': {'popular': 'Guaraipo', 'radius': 1500, 'color': 'brown'},
-        'Nannotrigona testaceicornis': {'popular': 'Iraí', 'radius': 500, 'color': 'gray'},
-        'Trigona spinipes': {'popular': 'Irapuá', 'radius': 1000, 'color': 'black'},
-        'Scaptotrigona bipunctata': {'popular': 'Tubuna', 'radius': 1000, 'color': 'purple'},
-        'Plebeia remota': {'popular': 'Mirim Guaçu', 'radius': 500, 'color': 'green'},
-        'Melipona fasciculata': {'popular': 'Tiúba', 'radius': 2000, 'color': 'red'},
-        'Apis mellifera': {'popular': 'Apis (Abelha de Mel)', 'radius': 3000, 'color': 'gold'}
-    }
-    
-    def get_popular_name(species):
-        if pd.isna(species): return 'Outra Meliponini'
-        for sci, info in bee_info.items():
-            if sci in species:
-                return info['popular']
-        return 'Outra Meliponini'
+# Dados de espécies e seus raios de forrageamento (em metros)
+# Baseado na pesquisa e referências do usuário
+bee_species = {
+    "Jataí": {"scientific": "Tetragonisca angustula", "radius": 600},
+    "Mandaçaia": {"scientific": "Melipona quadrifasciata", "radius": 2000},
+    "Uruçu": {"scientific": "Melipona scutellaris", "radius": 2500},
+    "Iraí": {"scientific": "Nannotrigona testaceicornis", "radius": 500},
+    "Mombucão": {"scientific": "Cephalotrigona capitata", "radius": 1500},
+    "Mandaguari": {"scientific": "Scaptotrigona postica", "radius": 1200},
+    "Tubuna": {"scientific": "Scaptotrigona bipunctata", "radius": 1200},
+    "Mirim": {"scientific": "Plebeia droryana", "radius": 400},
+}
 
-    def get_radius(species):
-        if pd.isna(species): return 500
-        for sci, info in bee_info.items():
-            if sci in species:
-                return info['radius']
-        return 500
+# Mapeamento de ocorrência por estado (simplificado para demonstração, baseado no Atlas)
+# Em um cenário real, isso viria de um CSV completo.
+occurrence = {
+    "SP": ["Jataí", "Mandaçaia", "Iraí", "Mirim", "Mandaguari"],
+    "PR": ["Jataí", "Mandaçaia", "Iraí", "Tubuna"],
+    "SC": ["Jataí", "Mandaçaia", "Iraí"],
+    "RS": ["Jataí", "Mirim", "Iraí"],
+    "MG": ["Jataí", "Mandaçaia", "Uruçu", "Mombucão"],
+    "BA": ["Uruçu", "Mombucão", "Jataí"],
+    "AM": ["Mombucão", "Uruçu"],
+    "PA": ["Mombucão"],
+    "GO": ["Jataí", "Mandaguari"],
+    "MT": ["Jataí", "Mombucão"],
+    "MS": ["Jataí", "Mandaguari"],
+    "RJ": ["Jataí", "Mandaçaia", "Iraí"],
+    "ES": ["Jataí", "Mandaçaia", "Uruçu"],
+}
 
-    def get_color(species):
-        if pd.isna(species): return 'gray'
-        for sci, info in bee_info.items():
-            if sci in species:
-                return info['color']
-        return 'gray'
+# Carregar municípios e estados
+municipios = pd.read_csv('municipios.csv')
+# O CSV original do repo kelvins tem cabeçalho: codigo_ibge,nome,latitude,longitude,capital,codigo_uf,siafi_id,ddd,fuso_horario
+municipios.columns = ['codigo_ibge', 'nome', 'lat', 'lon', 'capital', 'codigo_uf', 'siafi', 'ddd', 'fuso']
+estados = pd.read_csv('estados.csv')
 
-    df['nome_popular'] = df['species'].apply(get_popular_name)
-    df['raio_forrageamento'] = df['species'].apply(get_radius)
-    df['cor_mapa'] = df['species'].apply(get_color)
-    
-    # Remover registros sem coordenadas
-    df = df.dropna(subset=['decimalLatitude', 'decimalLongitude'])
-    
-    df.to_csv('/home/ubuntu/processed_bee_data.csv', index=False)
-    print(f"Dados processados e salvos. Total: {len(df)} registros.")
+# Criar dicionário de UF
+uf_map = estados.set_index('codigo_uf')['uf'].to_dict()
+municipios['uf'] = municipios['codigo_uf'].map(uf_map)
 
-if __name__ == "__main__":
-    process_data()
+# Filtrar apenas municípios que temos dados de ocorrência (para não sobrecarregar o mapa inicial)
+# Vamos pegar as capitais e algumas cidades importantes para o exemplo
+capitais = municipios[municipios['capital'] == 1].copy()
+
+# Adicionar espécies para cada município baseado na UF
+def get_species(row):
+    return occurrence.get(row['uf'], ["Jataí"]) # Default Jataí se não houver dados
+
+capitais['species'] = capitais.apply(get_species, axis=1)
+
+# Preparar dados para o mapa
+map_data = []
+for _, row in capitais.iterrows():
+    for sp_name in row['species']:
+        sp_info = bee_species.get(sp_name, {"scientific": "Unknown", "radius": 500})
+        map_data.append({
+            "city": row['nome'],
+            "uf": row['uf'],
+            "lat": row['lat'],
+            "lon": row['lon'],
+            "species_name": sp_name,
+            "scientific_name": sp_info['scientific'],
+            "radius": sp_info['radius']
+        })
+
+# Salvar como JSON para o Streamlit
+with open('bee_map_data.json', 'w', encoding='utf-8') as f:
+    json.dump(map_data, f, ensure_ascii=False, indent=4)
+
+print(f"Processados {len(map_data)} registros de ocorrência.")

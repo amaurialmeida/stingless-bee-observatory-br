@@ -1,0 +1,461 @@
+[
+    {
+        "city": "Aracaju",
+        "uf": "SE",
+        "lat": -10.9091,
+        "lon": -37.0677,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Belém",
+        "uf": "PA",
+        "lat": -1.4554,
+        "lon": -48.4898,
+        "species_name": "Mombucão",
+        "scientific_name": "Cephalotrigona capitata",
+        "radius": 1500
+    },
+    {
+        "city": "Belo Horizonte",
+        "uf": "MG",
+        "lat": -19.9102,
+        "lon": -43.9266,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Belo Horizonte",
+        "uf": "MG",
+        "lat": -19.9102,
+        "lon": -43.9266,
+        "species_name": "Mandaçaia",
+        "scientific_name": "Melipona quadrifasciata",
+        "radius": 2000
+    },
+    {
+        "city": "Belo Horizonte",
+        "uf": "MG",
+        "lat": -19.9102,
+        "lon": -43.9266,
+        "species_name": "Uruçu",
+        "scientific_name": "Melipona scutellaris",
+        "radius": 2500
+    },
+    {
+        "city": "Belo Horizonte",
+        "uf": "MG",
+        "lat": -19.9102,
+        "lon": -43.9266,
+        "species_name": "Mombucão",
+        "scientific_name": "Cephalotrigona capitata",
+        "radius": 1500
+    },
+    {
+        "city": "Boa Vista",
+        "uf": "RR",
+        "lat": 2.82384,
+        "lon": -60.6753,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Brasília",
+        "uf": "DF",
+        "lat": -15.7795,
+        "lon": -47.9297,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Campo Grande",
+        "uf": "MS",
+        "lat": -20.4486,
+        "lon": -54.6295,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Campo Grande",
+        "uf": "MS",
+        "lat": -20.4486,
+        "lon": -54.6295,
+        "species_name": "Mandaguari",
+        "scientific_name": "Scaptotrigona postica",
+        "radius": 1200
+    },
+    {
+        "city": "Cuiabá",
+        "uf": "MT",
+        "lat": -15.601,
+        "lon": -56.0974,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Cuiabá",
+        "uf": "MT",
+        "lat": -15.601,
+        "lon": -56.0974,
+        "species_name": "Mombucão",
+        "scientific_name": "Cephalotrigona capitata",
+        "radius": 1500
+    },
+    {
+        "city": "Curitiba",
+        "uf": "PR",
+        "lat": -25.4195,
+        "lon": -49.2646,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Curitiba",
+        "uf": "PR",
+        "lat": -25.4195,
+        "lon": -49.2646,
+        "species_name": "Mandaçaia",
+        "scientific_name": "Melipona quadrifasciata",
+        "radius": 2000
+    },
+    {
+        "city": "Curitiba",
+        "uf": "PR",
+        "lat": -25.4195,
+        "lon": -49.2646,
+        "species_name": "Iraí",
+        "scientific_name": "Nannotrigona testaceicornis",
+        "radius": 500
+    },
+    {
+        "city": "Curitiba",
+        "uf": "PR",
+        "lat": -25.4195,
+        "lon": -49.2646,
+        "species_name": "Tubuna",
+        "scientific_name": "Scaptotrigona bipunctata",
+        "radius": 1200
+    },
+    {
+        "city": "Florianópolis",
+        "uf": "SC",
+        "lat": -27.5945,
+        "lon": -48.5477,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Florianópolis",
+        "uf": "SC",
+        "lat": -27.5945,
+        "lon": -48.5477,
+        "species_name": "Mandaçaia",
+        "scientific_name": "Melipona quadrifasciata",
+        "radius": 2000
+    },
+    {
+        "city": "Florianópolis",
+        "uf": "SC",
+        "lat": -27.5945,
+        "lon": -48.5477,
+        "species_name": "Iraí",
+        "scientific_name": "Nannotrigona testaceicornis",
+        "radius": 500
+    },
+    {
+        "city": "Fortaleza",
+        "uf": "CE",
+        "lat": -3.71664,
+        "lon": -38.5423,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Goiânia",
+        "uf": "GO",
+        "lat": -16.6864,
+        "lon": -49.2643,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Goiânia",
+        "uf": "GO",
+        "lat": -16.6864,
+        "lon": -49.2643,
+        "species_name": "Mandaguari",
+        "scientific_name": "Scaptotrigona postica",
+        "radius": 1200
+    },
+    {
+        "city": "João Pessoa",
+        "uf": "PB",
+        "lat": -7.11509,
+        "lon": -34.8641,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Macapá",
+        "uf": "AP",
+        "lat": 0.034934,
+        "lon": -51.0694,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Maceió",
+        "uf": "AL",
+        "lat": -9.66599,
+        "lon": -35.735,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Manaus",
+        "uf": "AM",
+        "lat": -3.11866,
+        "lon": -60.0212,
+        "species_name": "Mombucão",
+        "scientific_name": "Cephalotrigona capitata",
+        "radius": 1500
+    },
+    {
+        "city": "Manaus",
+        "uf": "AM",
+        "lat": -3.11866,
+        "lon": -60.0212,
+        "species_name": "Uruçu",
+        "scientific_name": "Melipona scutellaris",
+        "radius": 2500
+    },
+    {
+        "city": "Natal",
+        "uf": "RN",
+        "lat": -5.79357,
+        "lon": -35.1986,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Palmas",
+        "uf": "TO",
+        "lat": -10.24,
+        "lon": -48.3558,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Porto Alegre",
+        "uf": "RS",
+        "lat": -30.0318,
+        "lon": -51.2065,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Porto Alegre",
+        "uf": "RS",
+        "lat": -30.0318,
+        "lon": -51.2065,
+        "species_name": "Mirim",
+        "scientific_name": "Plebeia droryana",
+        "radius": 400
+    },
+    {
+        "city": "Porto Alegre",
+        "uf": "RS",
+        "lat": -30.0318,
+        "lon": -51.2065,
+        "species_name": "Iraí",
+        "scientific_name": "Nannotrigona testaceicornis",
+        "radius": 500
+    },
+    {
+        "city": "Porto Velho",
+        "uf": "RO",
+        "lat": -8.76077,
+        "lon": -63.8999,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Recife",
+        "uf": "PE",
+        "lat": -8.04666,
+        "lon": -34.8771,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Rio Branco",
+        "uf": "AC",
+        "lat": -9.97499,
+        "lon": -67.8243,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Rio de Janeiro",
+        "uf": "RJ",
+        "lat": -22.9129,
+        "lon": -43.2003,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Rio de Janeiro",
+        "uf": "RJ",
+        "lat": -22.9129,
+        "lon": -43.2003,
+        "species_name": "Mandaçaia",
+        "scientific_name": "Melipona quadrifasciata",
+        "radius": 2000
+    },
+    {
+        "city": "Rio de Janeiro",
+        "uf": "RJ",
+        "lat": -22.9129,
+        "lon": -43.2003,
+        "species_name": "Iraí",
+        "scientific_name": "Nannotrigona testaceicornis",
+        "radius": 500
+    },
+    {
+        "city": "Salvador",
+        "uf": "BA",
+        "lat": -12.9718,
+        "lon": -38.5011,
+        "species_name": "Uruçu",
+        "scientific_name": "Melipona scutellaris",
+        "radius": 2500
+    },
+    {
+        "city": "Salvador",
+        "uf": "BA",
+        "lat": -12.9718,
+        "lon": -38.5011,
+        "species_name": "Mombucão",
+        "scientific_name": "Cephalotrigona capitata",
+        "radius": 1500
+    },
+    {
+        "city": "Salvador",
+        "uf": "BA",
+        "lat": -12.9718,
+        "lon": -38.5011,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "São Luís",
+        "uf": "MA",
+        "lat": -2.53874,
+        "lon": -44.2825,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "São Paulo",
+        "uf": "SP",
+        "lat": -23.5329,
+        "lon": -46.6395,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "São Paulo",
+        "uf": "SP",
+        "lat": -23.5329,
+        "lon": -46.6395,
+        "species_name": "Mandaçaia",
+        "scientific_name": "Melipona quadrifasciata",
+        "radius": 2000
+    },
+    {
+        "city": "São Paulo",
+        "uf": "SP",
+        "lat": -23.5329,
+        "lon": -46.6395,
+        "species_name": "Iraí",
+        "scientific_name": "Nannotrigona testaceicornis",
+        "radius": 500
+    },
+    {
+        "city": "São Paulo",
+        "uf": "SP",
+        "lat": -23.5329,
+        "lon": -46.6395,
+        "species_name": "Mirim",
+        "scientific_name": "Plebeia droryana",
+        "radius": 400
+    },
+    {
+        "city": "São Paulo",
+        "uf": "SP",
+        "lat": -23.5329,
+        "lon": -46.6395,
+        "species_name": "Mandaguari",
+        "scientific_name": "Scaptotrigona postica",
+        "radius": 1200
+    },
+    {
+        "city": "Teresina",
+        "uf": "PI",
+        "lat": -5.09194,
+        "lon": -42.8034,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Vitória",
+        "uf": "ES",
+        "lat": -20.3155,
+        "lon": -40.3128,
+        "species_name": "Jataí",
+        "scientific_name": "Tetragonisca angustula",
+        "radius": 600
+    },
+    {
+        "city": "Vitória",
+        "uf": "ES",
+        "lat": -20.3155,
+        "lon": -40.3128,
+        "species_name": "Mandaçaia",
+        "scientific_name": "Melipona quadrifasciata",
+        "radius": 2000
+    },
+    {
+        "city": "Vitória",
+        "uf": "ES",
+        "lat": -20.3155,
+        "lon": -40.3128,
+        "species_name": "Uruçu",
+        "scientific_name": "Melipona scutellaris",
+        "radius": 2500
+    }
+]
